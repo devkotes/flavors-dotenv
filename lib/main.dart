@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 import 'app.dart';
 import 'config/app_config.dart';
@@ -10,7 +11,7 @@ Future main() async {
     flavor: FlavorType.prod,
   );
 
-  WidgetsFlutterBinding.ensureInitialized();
   Widget app = await initializeApp(appConfig: appConfig);
+  await dotenv.load(fileName: ".env");
   runApp(app);
 }
