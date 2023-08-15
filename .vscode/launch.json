@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "[DEV] Flavor dotEnv",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "--flavor",
+                "dev"
+            ]
+        },
+        {
+            "name": "[STG] Flavor dotEnv",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "--flavor",
+                "stg"
+            ]
+        },
+        {
+            "name": "Flavor dotEnv",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "--flavor",
+                "prod"
+            ]
+        },
+
+    ]
+}
