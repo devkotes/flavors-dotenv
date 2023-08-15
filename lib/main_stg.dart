@@ -6,8 +6,8 @@ import 'config/flavor_type.dart';
 
 Future main() async {
   final appConfig = AppConfig(
-    appName: 'Flavor dotEnv',
-    flavor: FlavorType.prod,
+    appName: '[STG] Flavor dotEnv',
+    flavor: FlavorType.stg,
   );
 
   WidgetsFlutterBinding.ensureInitialized();
